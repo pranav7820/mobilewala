@@ -1,0 +1,30 @@
+{% extends 'shop/base.html'%}
+{% block title%}ram
+{% endblock title%}
+
+{% block body%}
+<form method="get" action="">
+    {% csrf_token %}
+    <div class="container" style="text-align:center">
+        <div class="row">
+        <div class="col">
+        <label for="name" >First Name</label>
+         <input id="name" type="text" name="text" placeholder="Enter the Full Name">
+        </div>
+        </div><br>
+        <div class="row">
+        <div class="col">
+            <input type="checkbox" name="chk">Caps ON
+        </div>
+        </div>
+
+    <br>
+        <div class="row">
+            <div class="col">
+
+    <input type="Submit" class="btn btn-primary">
+            </div>
+            </div>
+        </div>
+</form>
+{% endblock body%}

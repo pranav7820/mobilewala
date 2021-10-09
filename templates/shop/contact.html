@@ -1,0 +1,27 @@
+{% extends 'shop/base.html'%}
+{% block title%}contact
+{% endblock title%}
+{% block style%}
+text-align:center;
+{% endblock style%}
+{% block body%}
+<div class="container" style="text-align:center;">
+<h1 >CONTACT ME</h1>
+    <form method="post" action="">
+        {% csrf_token%}
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" name="name" placeholder="Full name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" name='email' placeholder="Email" aria-label="Last name">
+  </div>
+    <div class="col">
+    <input type="number" class="form-control" name="phone" placeholder="Phone" aria-label="Last name">
+  </div>
+</div><hr>
+
+        <input type="Submit" class="btn btn-primary">
+    </form>
+    </div>
+{% endblock body%}
